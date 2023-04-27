@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="103dp"
+        android:text="Кнопка"
+        app:layout_constraintEnd_toEndOf="@+id/countOfDay"
+        app:layout_constraintStart_toStartOf="@+id/countOfDay"
+        app:layout_constraintTop_toBottomOf="@+id/countOfDay" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="247dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="101dp"
+        android:background="#F6DFDF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <EditText
+        android:id="@+id/countOfPair"
+        android:layout_width="303dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="82dp"
+        android:hint="Количество пар"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/countOfDay"
+        android:layout_width="303dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="26dp"
+        android:hint="Количество учебных дней"
+        app:layout_constraintEnd_toEndOf="@+id/countOfPair"
+        app:layout_constraintStart_toStartOf="@+id/countOfPair"
+        app:layout_constraintTop_toBottomOf="@+id/countOfPair" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="294dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="29dp"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+</androidx.constraintlayout.widget.ConstraintLayout>

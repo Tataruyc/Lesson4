@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="335dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="348dp"
+        android:onClick="OnClickButton"
+        android:text="Кнопка"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/encryptionText"
+        android:layout_width="296dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="56dp"
+        android:hint="Введите фразу:"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/encryptionBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Шифрование"
+        android:onClick="OnClickEncryption"
+        app:layout_constraintEnd_toEndOf="@+id/encryptionText"
+        app:layout_constraintStart_toStartOf="@+id/encryptionText"
+        app:layout_constraintTop_toBottomOf="@+id/encryptionText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
